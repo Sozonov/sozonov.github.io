@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Repro vk bug</h1>
+<a href="https://github.com/Sozonov/sozonov.github.io/blob/master/index.html">Source code</a>
+
+<script>
+    setInterval(() => {
+        console.log('tick')
+        document.getElementById("root").innerHTML = 'window.location.hash ===' + window.location.hash + ' (Updated at:' + Date.now() + ')'
+    }, 1000)
+</script>
+
+<div id="root"></div>
 </body>
 </html>
